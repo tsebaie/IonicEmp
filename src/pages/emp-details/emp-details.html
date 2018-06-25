@@ -1,0 +1,63 @@
+<!--
+  Generated template for the EmpDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color=Tlp>
+    <ion-title>EmpDetails</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img src="../../assets/imgs/art-accounting.jpg" width="100%" height="70%">
+  <ion-item>
+    <ion-label for="name">Enter Name here</ion-label>
+    <ion-input type="text" name="name" class="clname" #name> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label for="surname">Enter Surname here</ion-label>
+    <ion-input type="text" surname="surname" class="clsurname" #surname> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label for="idno">Enter Identity Number here</ion-label>
+    <ion-input type="text" idno="idno" class="clidno" #idno> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label for="role">Enter role here</ion-label>
+    <ion-input type="text" role="role" class="clrole" #role> </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" #Username></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Image</ion-label>
+    <ion-input type="file" #empimage></ion-input>
+  </ion-item>
+
+
+  <input type="submit" (click)="display(name.value, surname.value, idno.value, role.value,empimage.value, Username.value, password.value)"
+    class="btnSubmit" style="margin-left: 60px;">
+
+  <!-- <ul *ngFor="let a of arr">
+<li>{{a.name}}{{a.surname}}{{a.idno}}{{a.role}}</li>
+
+ </ul>  -->
+
+
+</ion-content>

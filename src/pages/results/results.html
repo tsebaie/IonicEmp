@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ResultsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  
+  <span class="border border-primary"></span>
+
+  <ion-navbar color=Tlp>
+    <ion-title>Results</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+  
+<ion-content padding>
+  <ion-list >
+    <ion-item *ngFor="let a of emp, let i = index">
+        <img src="{{a.empimage}}" width="100%" height="100%">
+         <p>User name is {{a.name}}</p>
+         <p>User surname is {{a.surname}}</p>
+         <p>User role is {{a.role}}</p>
+         <p>User Id is {{a.idno}}</p> 
+         <p>Username is {{a.Username}}</p>
+         <p>User password {{a.password}}</p> 
+        <button (click)="delete(i)">Delete</button>
+        <button (click)="update(i)">Update</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
